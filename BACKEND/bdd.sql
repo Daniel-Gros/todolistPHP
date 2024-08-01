@@ -37,5 +37,6 @@ CREATE TABLE IF NOT EXISTS `item` (
 INSERT INTO `category` (`name`, `icon`) VALUES ('Voyage', 'fas fa-plane');
 INSERT INTO `category` (`name`, `icon`) VALUES ('Travail', 'fas fa-briefcase');
 INSERT INTO `user` (`nickname`, `email`, `password`) VALUES ('test', 'test@test.fr', SHA2('test', 256));
+INSERT INTO `list` (`title`, `category_id`, `user_id`) VALUES ('Vacances à Paris', 1, 1);
 INSERT INTO `item` (`name`, `status`, `list_id`) VALUES ('Acheter des billets', 0, 1);
 INSERT INTO `item` (`name`, `status`, `list_id`) VALUES ('Réserver un hôtel', 0, 1);
